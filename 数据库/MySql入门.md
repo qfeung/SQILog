@@ -1,4 +1,5 @@
 #MySql入门
+
 ##数据库的概念
 ```
 存储数据的仓库, 本质是一个文件系统, 数据按照特定的格式存储起来.
@@ -10,27 +11,44 @@
 ```
 
 ##SQL语句
+
 ###概念
 1. 结构化查询语句
 2. ISO(国际标准)
 3. 各个数据库厂商都支持ISO的SQL语句(普通话), 但通常都在此基础上有自己的扩展(方言).
 
 ###分类
+
 ####DDL(Data Definition Language)
+
 对`数据库 database`, `表 table`, `列 column`等数据库对象进行`创建 create`, `修改 alter`, `删除 drop`等操作.
+
 ####DML(Data Manipulation Language)
+
 对数据库中表的记录进行更新, 关键字: `插入 insert`, `删除 delete`, `更新 update`等操作.
+
 ####DQL(Data Query Language)
+
 查询数据库中表的记录. 关键字: select, from, where等.
+
 ####DCL(Data Control Language)
+
 定义数据库的访问权限和安全级别, 创建用户. 关键字: grant等.
+
 ####其它语句
+
 展示数据库相关的内容等操作. 关键字:show等.
 
 ##数据库操作(命令)
+
 ###登陆
+
+```
 mysql -u用户名 -p密码
+```
+
 例如:
+
 ```
 mysql -uroot -p1234
 ```
@@ -94,8 +112,9 @@ desc 表名;
 	- 语法
 	
 	```
-	create table 表名(	字段名 类型(长度) [约束],	字段名 类型(长度) [约束],	字段名 类型(长度) [约束]);
+	create table 表名(	字段名 类型(长度) [约束],	字段名 类型(长度) [约束],	字段名 类型(长度) [约束]	);
 	```
+	
 *tips:*
 
 	```
