@@ -14,7 +14,7 @@ Singleton 模式是 iOS 开发中非常有用的设计模式, 可用于对象之
 
 ---
 
-## implementation
+## Implementation
 
 ### 技术要点
 
